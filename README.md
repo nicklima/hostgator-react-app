@@ -7,7 +7,7 @@
     * [Requirements](#requirements)
     * [Extras](#extras)
     * [Preview](#preview)
-  * [Technologies](#table-of-contents)
+  * [Technologies](#technologies)
   * [Dependencies](#dependencies)
   * [Installation](#installation)
     * [Cloning](#cloning)
