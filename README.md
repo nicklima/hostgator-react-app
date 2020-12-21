@@ -30,7 +30,7 @@ This project was developed as an application test for the Frontend position at H
 
 ### Extras
 
-Here are some extra items to increase the test score if applied.
+Here there are some extra items to increase the test score if applied.
 
 - [x] Use of automators (Gulp, Grunt or Webpack);
 - [x] Use of CSS preprocessors (SASS, LESS and etc.);
@@ -104,8 +104,8 @@ Your app is ready to be deployed!
 [![Site Badge](https://img.shields.io/badge/Site-nicklima.com.br-black)](https://nicklima.com.br)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicklima)](https://www.linkedin.com/in/nicklima)
 
-My name is **Nicholas Lima**, married, born in Fortaleza-CE. I currently live in SP and work as member of the Front-End team at [Decode](https://decode.buzz), a [BTG Pactual](https://www.btgpactual.com) company.
+My name is **Nicholas Lima**. I'm married, and I was born in Fortaleza-CE. I'm currently living in SP and working as a member of the Front-End team at [Decode](https://decode.buzz), a [BTG Pactual](https://www.btgpactual.com) company.
 
-I have been working as a developer since 2005 and have participated in some national projects such as the website of the singer Wesley Safadão, the Investment for VC project, the Decode HUB (Decode posts and articles portal) and some many other projects over the years.
+I have been working as a developer since 2005 and have participated in some national projects such as the website of the singer Wesley Safadão, the Investmentos para VC project, the Decode HUB (Decode posts and articles portal) and some many other projects over the years.
 
-I am an Open Source / Linux enthusiast (although a little away from the Linux universe) and creator of the blog [Cotidiano Linux](https://cotidianolinux.com.br), a project that is currently stopped. In my free time, I enjoy watching series with my wife, listening to music, walking, having a good beer and playing video games.
+I am an Open Source/Linux enthusiast (although a little away from the Linux universe) and creator of the blog [Cotidiano Linux](https://cotidianolinux.com.br). In my free time, I enjoy watching series with my wife, listening to music, walking, having a good beer and playing video games.
