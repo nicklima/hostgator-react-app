@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+import ErrorApi from '~/components/ErrorApiMsg';
 import PlansCard from '~/components/PlansCard';
 import PlansSelector from '~/components/PlanSelector';
 import Carousel from '~/components/Carousel';
@@ -12,26 +13,23 @@ import {
   PlansConditionsButton,
 } from './styles';
 
-import { request } from '~/services/api';
-import responseCodes from '~/helper/responseCodes';
+import { newRequest } from '~/services/api';
 
 const Plans = () => {
+  const [hostgatorError, setHostgatorError] = useState({
+    status: false,
+    code: '',
+  });
   const [hostgatorPlans, setHostgatorPlans] = useState(null);
   const [hostgatorCycle, setHostgatorCycle] = useState('triennially');
 
   const hostgatorCoupon = 'PROMOHG40';
   const getHostgatorData = () => {
-    request({ endpoint: 'prices' })
-      .then(response => {
-        if (response.status === responseCodes.OK) {
-          // Setando TimeOut para visualização do Skeleton
-          setTimeout(() => {
-            formatHostgatorPlans(response.data.shared.products);
-          }, 3000);
-        }
-      })
-      // eslint-disable-next-line
-      .catch(error => console.log(error));
+    newRequest({
+      endpoint: 'prices',
+      handleResponse: formatHostgatorPlans,
+      handleError: setHostgatorError,
+    });
   };
 
   const formatHostgatorPlans = plan => {
@@ -47,6 +45,7 @@ const Plans = () => {
   useEffect(() => getHostgatorData(), []);
   return (
     <PlansSec>
+      <ErrorApi data={hostgatorError} />
       <PlansContainer id="planos">
         <PlansSelector
           handleChange={handleCycle}

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { colors } from '~/styles/variables';
 
 /// /////////
@@ -838,7 +840,7 @@ export const ArtGuy = () => (
 // Wave
 /// /////////
 
-export const HeroWaves = ({ color = colors.blueMedium }) => (
+export const HeroWaves = ({ color }) => (
   <svg x={0} y={0} viewBox="0 0 2995 32.3" xmlSpace="preserve">
     <path
       style={{ fill: 'none' }}
@@ -855,11 +857,19 @@ export const HeroWaves = ({ color = colors.blueMedium }) => (
   </svg>
 );
 
+HeroWaves.propTypes = {
+  color: PropTypes.string,
+};
+
+HeroWaves.defaultProps = {
+  color: colors.blueMedium,
+};
+
 /// /////////
 // Icons
 /// /////////
 
-export const Arrow = ({ color = colors.white, bgColor = colors.blueDark }) => (
+export const Arrow = ({ color, bgColor }) => (
   <svg width={35} height={35} viewBox="0 0 35 35">
     <g transform="translate(-7230 -859)">
       <circle
@@ -882,10 +892,17 @@ export const Arrow = ({ color = colors.white, bgColor = colors.blueDark }) => (
   </svg>
 );
 
-export const ArrowDown = ({
-  color = colors.white,
-  circleColor = colors.blue,
-}) => (
+Arrow.propTypes = {
+  color: PropTypes.string,
+  bgColor: PropTypes.string,
+};
+
+Arrow.defaultProps = {
+  color: colors.white,
+  bgColor: colors.blueDark,
+};
+
+export const ArrowDown = ({ color, circleColor }) => (
   <svg width={50.219} height={50.219} viewBox="0 0 50.219 50.219">
     <defs>
       <clipPath id="SetaClip">
@@ -921,6 +938,16 @@ export const ArrowDown = ({
   </svg>
 );
 
+ArrowDown.propTypes = {
+  color: PropTypes.string,
+  circleColor: PropTypes.string,
+};
+
+ArrowDown.defaultProps = {
+  color: colors.white,
+  circleColor: colors.blue,
+};
+
 export const Info = () => (
   <svg width={15.21} height={15.21} viewBox="0 0 15.21 15.21">
     <defs>
@@ -941,7 +968,7 @@ export const Info = () => (
   </svg>
 );
 
-export const Check = ({ color = colors.white }) => (
+export const Check = ({ color }) => (
   <svg width={15.773} height={15.773} viewBox="0 0 15.773 15.773">
     <defs>
       <clipPath id="CheckClip">
@@ -960,6 +987,14 @@ export const Check = ({ color = colors.white }) => (
     </g>
   </svg>
 );
+
+Check.propTypes = {
+  color: PropTypes.string,
+};
+
+Check.defaultProps = {
+  color: colors.white,
+};
 
 /// /////////
 // Planos
@@ -1047,7 +1082,7 @@ export const PlanoTurbo = () => (
 // Radio Button
 /// /////////
 
-export const RadioOn = ({ color = colors.white }) => (
+export const RadioOn = ({ color }) => (
   <svg width={18} height={18} viewBox="0 0 18 18">
     <path
       d="M9 0a9 9 0 00-9 9 9 9 0 009 9 9 9 0 009-9 9 9 0 00-9-9zm0 16.2A7.2 7.2 0 011.8 9 7.2 7.2 0 019 1.8 7.2 7.2 0 0116.2 9 7.2 7.2 0 019 16.2zm0-2.7A4.5 4.5 0 0013.5 9 4.5 4.5 0 009 4.5 4.5 4.5 0 004.5 9 4.5 4.5 0 009 13.5z"
@@ -1056,7 +1091,15 @@ export const RadioOn = ({ color = colors.white }) => (
   </svg>
 );
 
-export const RadioOff = ({ color = colors.blueGray }) => (
+RadioOn.propTypes = {
+  color: PropTypes.string,
+};
+
+RadioOn.defaultProps = {
+  color: colors.white,
+};
+
+export const RadioOff = ({ color }) => (
   <svg width={18} height={18} viewBox="0 0 18 18">
     <defs>
       <clipPath id="RadioOffClip">
@@ -1071,3 +1114,11 @@ export const RadioOff = ({ color = colors.blueGray }) => (
     </g>
   </svg>
 );
+
+RadioOff.propTypes = {
+  color: PropTypes.string,
+};
+
+RadioOff.defaultProps = {
+  color: colors.blueGray,
+};
