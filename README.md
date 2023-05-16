@@ -99,13 +99,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-## Author
-[![Site Badge](https://img.shields.io/badge/Site-nicklima.com.br-black)](https://nicklima.com.br)
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nicklima)](https://www.linkedin.com/in/nicklima)
-
-My name is **Nicholas Lima**. I'm married, and I was born in Fortaleza-CE. I'm currently living in SP and working as a member of the Front-End team at [Decode](https://decode.buzz), a [BTG Pactual](https://www.btgpactual.com) company.
-
-I have been working as a developer since 2005 and have participated in some national projects such as the website of the singer Wesley Safadão, the Investmentos para VC project, the Decode HUB (Decode posts and articles portal) and some many other projects over the years.
-
-I am an Open Source/Linux enthusiast (although a little away from the Linux universe) and creator of the blog [Cotidiano Linux](https://cotidianolinux.com.br). In my free time, I enjoy watching series with my wife, listening to music, walking, having a good beer and playing video games.
